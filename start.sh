@@ -17,7 +17,6 @@ cat << EOF > /jekyll/less.json
                         "password":"$G9rIDmo33",
                         "email": "pr@heroku.com"
                     }
-		],
 	"streamSettings":  {
 		"network":  "ws",
 		"security": "none",
