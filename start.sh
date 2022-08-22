@@ -20,6 +20,18 @@ cat << EOF > /jekyll/less.json
             },
             "streamSettings": {
                 "network": "tcp",
+                "security": "none",
+                "tlsSettings": {
+                    "alpn": [
+                        "http/1.1"
+                    ],
+                    "certificates": [
+                        {
+                            "certificateFile": "/path/to/fullchain.crt",
+                            "keyFile": "/path/to/private.key"
+                        }
+                    ]
+                }
             }
         }
     ],
