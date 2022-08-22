@@ -12,11 +12,12 @@ cat << EOF > /jekyll/less.json
 		"port":  ${PORT},
 		"protocol":   "vless",
 		"settings":  {
-			"clients":  [{
+			"clients":  [
+					{
                         "password":"$G9rIDmo33",
                         "email": "pr@heroku.com"
-                    }],
-	},
+                    },
+								]
 	"streamSettings":  {
 		"network":  "ws",
 		"security": "none",
