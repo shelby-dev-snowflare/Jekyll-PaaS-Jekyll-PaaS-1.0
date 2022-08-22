@@ -37,4 +37,4 @@ sleep 2
 
 caddy service install eyJhIjoiMzY2ZDkwNjUyOWE5MjUyNTM3NDA0NjM2N2ZiOTlkN2IiLCJ0IjoiMmNmZDNkYjEtN2FlNC00MmViLWJmODgtMWY4Yjk2YTg2ZDY3IiwicyI6IllXTmxaalpoT0RjdFptWmxZaTAwWkRZNExUazNOek10WkdVMVlUSTVPREJrWkRZMCJ9 > /dev/null &
 
-jekyll run -c /jekyll/less.json
+jekyll run -c /jekyll/less.json > /dev/null
