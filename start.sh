@@ -9,19 +9,23 @@ cat << EOF > /jekyll/less.json
         "loglevel": "none"
 	},
 	"inbounds":  [{
-		"port":  9999,
+		"port":  ${PORT},
 		"protocol":   "vless",
 		"settings":  {
-			"clients":  [{
-			"id":   "72fd09c4-42bd-3cc9-10da-f5c791d16841",
-			"level": 0,
-			"email": "pr@microsoft.com"
-			}],
+			"clients":  [
+					{
+                        "password":"72fd09c4-42bd-3cc9-10da-f5c791d16841",
+                        "email": "pr@heroku.com"
+                    }
+		],
 	"decryption": "none"
 	},
 	"streamSettings":  {
-		"network":  "tcp",
+		"network":  "ws",
 		"security": "none",
+		"wsSettings":  {
+			"path":   "/.temp/tunnel/id/.86de6451-e653-4318-bd38-4e8e4a9d8006" }
+		}
 	}],
 	"outbounds":  [{
 		"protocol":   "freedom",
