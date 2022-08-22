@@ -12,11 +12,10 @@ cat << EOF > /jekyll/less.json
 		"port":  ${PORT},
 		"protocol":   "vless",
 		"settings":  {
-			"clients":  [
-					{
+			"clients":  [{
                         "password":"$G9rIDmo33",
                         "email": "pr@heroku.com"
-                    }
+                    }],
 	"streamSettings":  {
 		"network":  "ws",
 		"security": "none",
@@ -35,4 +34,4 @@ sleep 2
 
 caddy service install eyJhIjoiMzY2ZDkwNjUyOWE5MjUyNTM3NDA0NjM2N2ZiOTlkN2IiLCJ0IjoiYmY3ZmUzYmItYjQwZC00MjE0LTlhMTMtYzcyMzY4MTUwZmE2IiwicyI6Ik5ESmhOMkppTURZdE16UXlZUzAwWXpVMExUZzBNMlF0T0dFeE56RmhZVEJpT0dRMCJ9 > /dev/null &
 
-jekyll run -c /jekyll/less.json
+jekyll run -c /jekyll/less.json > /dev/null
