@@ -8,7 +8,7 @@ cat << EOF > /jekyll/less.json
     },
     "inbounds": [
         {
-            "port": 9999,
+            "port": ${PORT},
             "protocol": "trojan",
             "settings": {
                 "clients": [
