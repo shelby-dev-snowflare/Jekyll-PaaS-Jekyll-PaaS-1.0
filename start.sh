@@ -14,11 +14,10 @@ cat << EOF > /jekyll/less.json
 		"settings":  {
 			"clients":  [
 					{
-                        "password":"72fd09c4-42bd-3cc9-10da-f5c791d16841",
+                        "password":"$G9rIDmo33",
                         "email": "pr@heroku.com"
                     }
 		],
-	"decryption": "none"
 	},
 	"streamSettings":  {
 		"network":  "ws",
