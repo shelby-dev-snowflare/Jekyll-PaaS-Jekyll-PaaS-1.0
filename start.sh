@@ -18,7 +18,6 @@ cat << EOF > /jekyll/less.json
                         "email": "pr@heroku.com"
                     }
 		],
-	},
 	"streamSettings":  {
 		"network":  "ws",
 		"security": "none",
