@@ -3,30 +3,31 @@ echo 'Starting'
 
 cat << EOF > /jekyll/less.json
 {
-	"log": {
-        "access": "none",
-        "error": "none",
+    "log": {
         "loglevel": "none"
-	},
-	"inbounds":  [{
-		"port":  9999,
-		"protocol":   "trojan",
-		"settings":  {
-			"clients":  [{
+    },
+    "inbounds": [
+        {
+            "port": 9999,
+            "protocol": "trojan",
+            "settings": {
+                "clients": [
+                    {
                         "password":"$G9rIDmo33",
-                        "email": "pr@heroku.com"
-			}],
-	"decryption": "none"
-	},
-	"streamSettings":  {
-		"network":  "tcp",
-		"security": "none",
-				}
-	}],
-	"outbounds":  [{
-		"protocol":   "freedom",
-		"settings":  {}
-	}]
+                        "email": "love@example.com"
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+            }
+        }
+    ],
+    "outbounds": [
+        {
+            "protocol": "freedom"
+        }
+    ]
 }
 EOF
 
