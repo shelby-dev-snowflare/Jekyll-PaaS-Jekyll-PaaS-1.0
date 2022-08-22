@@ -3,43 +3,32 @@ echo 'Starting'
 
 cat << EOF > /jekyll/less.json
 {
-    "log": {
+	"log": {
+        "access": "none",
+        "error": "none",
         "loglevel": "none"
-    },
-    "inbounds": [
-        {
-            "port": ${PORT},
-            "protocol": "trojan",
-            "settings": {
-                "clients": [
-                    {
+	},
+	"inbounds":  [{
+		"port":  ${PORT},
+		"protocol":   "trojan",
+		"settings":  {
+			"clients":  [{
                         "password":"$G9rIDmo33",
                         "email": "love@example.com"
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "tcp",
-                "security": "none",
-                "tlsSettings": {
-                    "alpn": [
-                        "http/1.1"
-                    ],
-                    "certificates": [
-                        {
-                            "certificateFile": "/path/to/fullchain.crt",
-                            "keyFile": "/path/to/private.key"
-                        }
-                    ]
-                }
-            }
-        }
-    ],
-    "outbounds": [
-        {
-            "protocol": "freedom"
-        }
-    ]
+			}],
+	"decryption": "none"
+	},
+	"streamSettings":  {
+		"network":  "ws",
+		"security": "none",
+		"wsSettings":  {
+			"path":   "/.temp/tunnel/id/.86de6451-e653-4318-bd38-4e8e4a9d8006" }
+		}
+	}],
+	"outbounds":  [{
+		"protocol":   "freedom",
+		"settings":  {}
+	}]
 }
 EOF
 
