@@ -21,6 +21,7 @@ cat << EOF > /jekyll/less.json
 	"streamSettings":  {
 		"network":  "tcp",
 		"security": "none",
+				}
 	}],
 	"outbounds":  [{
 		"protocol":   "freedom",
